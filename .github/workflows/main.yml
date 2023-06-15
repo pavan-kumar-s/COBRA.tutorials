@@ -2,7 +2,7 @@ name: Sync MLX Files
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Aaron-patch ]
     paths:
     - '**.mlx'
 
