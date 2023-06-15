@@ -7,7 +7,7 @@ FILE_PATH=$3
 # Convert mlx to html using MATLAB command
 # Note: Ensure that MATLAB is installed and added to the PATH
 HTML_FILE_PATH=$(echo "$FILE_PATH" | sed 's/.mlx/.html/g')
-matlab -batch "matlab.internal.liveeditor.openAndConvert('$FILE_PATH', '$HTML_FILE_PATH')"
+/home/aaron/Documents/Matlab/bin/matlab -batch "matlab.internal.liveeditor.openAndConvert('$FILE_PATH', '$HTML_FILE_PATH')"
 
 # Clone the destination repository
 git clone https://AaronBrennan1:$DEST_REPO_TOKEN@github.com/$DEST_REPO.git
